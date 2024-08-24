@@ -1,0 +1,46 @@
+/* src/pages/Home.css */
+.home {
+    text-align: center;
+    padding: 2rem;
+    background-color: white;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.home h2 {
+    color: #6d2af4; /* Purple heading color */
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.appointment-button {
+    background-color: #1b9443; /* Darker green button */
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.appointment-button:hover {
+    background-color: #1b783a;; /* Darker green on hover */
+}
+
+.home p {
+    color: #666; /* Grey text color */
+    margin-top: 1rem;
+}
+
+.pets-image {
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+}

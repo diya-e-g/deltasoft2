@@ -1,0 +1,79 @@
+/* src/components/Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    gap: 2rem; /* Space between logo and navigation items */
+  }
+  
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    margin: 0;
+  }
+  
+  .navbar ul li {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: grey; /* Default grey color */
+    font-weight: bold;
+    padding-bottom: 0.25rem;
+    
+  }
+  
+  .navbar ul li a.active-link {
+    color: #6d2af4; /* Blue color when active */
+    text-decoration: none; /* Remove the default underline */
+    position: relative; /* Needed to position the custom underline */
+  }
+  
+  .navbar ul li a.active-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -8px; /* Adjust this value to control the distance from the text */
+    height: 5px; /* Thickness of the underline */
+    background-color: #6d2af4; /* Same color as the text */
+    border-radius: 3px; /* Optional: round the corners */
+  }
+  .auth-buttons {
+    margin-left: auto; /* Push auth buttons to the far right */
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .auth-buttons button {
+    background-color: #6d2af4; /* Purple button */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .auth-buttons button:hover {
+    background-color: #3c1aa7; /* Darker purple on hover */
+  }
+  
+  .auth-buttons button:nth-child(2) {
+    background-color: white;
+    color: #6d2af4;
+    border: 2px solid #6d2af4;
+  }
+  
+  .auth-buttons button:nth-child(2):hover {
+    background-color: #f0f0f0; /* Light grey background on hover for the signup button */
+  }
